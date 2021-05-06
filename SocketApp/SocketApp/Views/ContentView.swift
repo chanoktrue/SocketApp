@@ -13,13 +13,29 @@ struct ContentView: View {
     
     var body: some View {
         VStack {
-            Text("Received message from Node.js:")
+            Text("Msg:")
                 .font(.largeTitle)
-            ForEach(socketIOVM.messages, id: \.self) { msg in
-                Text(msg)
-                    .padding()
+                .frame(minWidth: 0, maxWidth: .infinity, alignment: .leading)
+                .padding()
+            List {
+                ForEach(socketIOVM.messages, id: \.self) { msg in
+                    Text(msg)
+                        .padding()
+                }
             }
+            
             Spacer()
+            
+            HStack {
+                TextField("Send msg:", text: $socketIOVM.msg)
+                    .textFieldStyle(PlainTextFieldStyle())
+                    .padding()
+                
+                Button("Send"){
+                    socketIOVM.sendMsg()
+                }
+            }
+            .padding(.horizontal, 20)
         }
     }
 }

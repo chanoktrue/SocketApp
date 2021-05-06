@@ -1,23 +1,30 @@
-const express = require("express")
-const app = express()
-const server = require("http").createServer(app)
-const io = require("socket.io")(server)
-const port = 3000
+const express = require('express');
+const app = express();
+const http = require('http');
+const server = http.createServer(app);
+const { Server } = require("socket.io");
+const io = new Server(server);
 
-connections = []
+app.get('/', (req, res) => {
+  res.send("Soket.io running...")
+});
 
-app.listen(port, () => {
-    console.log("Server running...")
-})
+io.on('connection', (socket) => {
+  console.log('a user connected');
+  io.emit("msg",{"msg": "xxxxx" })
 
-io.sockets.on('connections', (socket) => {
-    connections.push(socket)
-    console.log("Connect: %s socket are connected", connections.length)
+  socket.on('disconnect', () => {
+      console.log("user disconnected")
+  })
 
-    // Disconnect
-    socket.on("disconnect", (data) => {
-        connections.splice(connections.indexOf(socket), 1)
-        console.log("iOS Client Port", {msg: "Hi iOS Client"})
-    }) 
+  socket.on('msg', msg => {
+      console.log("Message: " + msg)
+      io.emit("msg", {"msg": msg})
+  })
 
-})
+ 
+});
+
+server.listen(3000, () => {
+  console.log('listening on *:3000');
+});

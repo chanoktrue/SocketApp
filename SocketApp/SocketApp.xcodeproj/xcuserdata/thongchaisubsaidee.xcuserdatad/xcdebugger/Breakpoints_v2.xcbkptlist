@@ -7,15 +7,15 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "1AB92FC7-1A04-4464-B207-D577C3F7D9E7"
-            shouldBeEnabled = "Yes"
+            uuid = "B9795656-8EC1-47E8-967E-CE3754C88FF7"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "SocketApp/ViewModels/SoketIOViewModel.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "24"
-            endingLineNumber = "24"
+            startingLineNumber = "27"
+            endingLineNumber = "27"
             landmarkName = "init()"
             landmarkType = "7">
          </BreakpointContent>
@@ -23,63 +23,31 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "DECBF58E-C4CD-4C00-939C-93F16929A0F8"
-            shouldBeEnabled = "Yes"
+            uuid = "741493A1-B895-453B-9628-177035760CEA"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "SocketApp/ViewModels/SoketIOViewModel.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "29"
-            endingLineNumber = "29"
+            startingLineNumber = "32"
+            endingLineNumber = "32"
             landmarkName = "init()"
             landmarkType = "7">
-            <Locations>
-               <Location
-                  uuid = "DECBF58E-C4CD-4C00-939C-93F16929A0F8 - 25e3cc858aab2e5a"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #2 (Swift.Array&lt;Any&gt;, SocketIO.SocketAckEmitter) -&gt; () in SocketApp.SocketIOViewModel.init() -&gt; SocketApp.SocketIOViewModel"
-                  moduleName = "SocketApp"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/thongchaisubsaidee/Documents/Xcode/Xcode12/Tutorial/Youtube/BeyondOnesAndZeros/Socket.io/SocketApp/SocketApp/ViewModels/SoketIOViewModel.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "29"
-                  endingLineNumber = "29"
-                  offsetFromSymbolStart = "686">
-               </Location>
-               <Location
-                  uuid = "DECBF58E-C4CD-4C00-939C-93F16929A0F8 - 590d23e1635d1a82"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 () -&gt; () in closure #2 (Swift.Array&lt;Any&gt;, SocketIO.SocketAckEmitter) -&gt; () in SocketApp.SocketIOViewModel.init() -&gt; SocketApp.SocketIOViewModel"
-                  moduleName = "SocketApp"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/thongchaisubsaidee/Documents/Xcode/Xcode12/Tutorial/Youtube/BeyondOnesAndZeros/Socket.io/SocketApp/SocketApp/ViewModels/SoketIOViewModel.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "27"
-                  endingLineNumber = "27"
-                  offsetFromSymbolStart = "97">
-               </Location>
-            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "025D5AD6-B80B-4F66-A637-730CAEC4DE54"
-            shouldBeEnabled = "Yes"
+            uuid = "3E6BA7D0-FD91-46EE-A647-4E45C3316E1C"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "SocketApp/ViewModels/SoketIOViewModel.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "35"
-            endingLineNumber = "35"
+            startingLineNumber = "30"
+            endingLineNumber = "30"
             landmarkName = "init()"
             landmarkType = "7">
          </BreakpointContent>
