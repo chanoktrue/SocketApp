@@ -11,7 +11,7 @@ app.get('/', (req, res) => {
 
 io.on('connection', (socket) => {
   console.log('a user connected');
-  io.emit("msg",{"msg": "xxxxx" })
+  io.emit("msg",{"msg": "Wellcome to socket.io" })
 
   socket.on('disconnect', () => {
       console.log("user disconnected")
