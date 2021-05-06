@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -11,6 +11,8 @@
 		CDF98DDE26438D4000A75068 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDF98DDD26438D4000A75068 /* ContentView.swift */; };
 		CDF98DE026438D4500A75068 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CDF98DDF26438D4500A75068 /* Assets.xcassets */; };
 		CDF98DE326438D4500A75068 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CDF98DE226438D4500A75068 /* Preview Assets.xcassets */; };
+		CDF98DEC26438E1B00A75068 /* SocketIO in Frameworks */ = {isa = PBXBuildFile; productRef = CDF98DEB26438E1B00A75068 /* SocketIO */; };
+		CDF98DF2264391D700A75068 /* SoketIOViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDF98DF1264391D700A75068 /* SoketIOViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +22,7 @@
 		CDF98DDF26438D4500A75068 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CDF98DE226438D4500A75068 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		CDF98DE426438D4500A75068 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CDF98DF1264391D700A75068 /* SoketIOViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoketIOViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -27,6 +30,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CDF98DEC26438E1B00A75068 /* SocketIO in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -53,7 +57,10 @@
 			isa = PBXGroup;
 			children = (
 				CDF98DDB26438D4000A75068 /* SocketAppApp.swift */,
-				CDF98DDD26438D4000A75068 /* ContentView.swift */,
+				CDF98DF026438E8300A75068 /* Views */,
+				CDF98DEF26438E7D00A75068 /* ViewModels */,
+				CDF98DEE26438E7600A75068 /* Services */,
+				CDF98DED26438E6F00A75068 /* Models */,
 				CDF98DDF26438D4500A75068 /* Assets.xcassets */,
 				CDF98DE426438D4500A75068 /* Info.plist */,
 				CDF98DE126438D4500A75068 /* Preview Content */,
@@ -67,6 +74,36 @@
 				CDF98DE226438D4500A75068 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		CDF98DED26438E6F00A75068 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		CDF98DEE26438E7600A75068 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		CDF98DEF26438E7D00A75068 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				CDF98DF1264391D700A75068 /* SoketIOViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		CDF98DF026438E8300A75068 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				CDF98DDD26438D4000A75068 /* ContentView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -85,6 +122,9 @@
 			dependencies = (
 			);
 			name = SocketApp;
+			packageProductDependencies = (
+				CDF98DEB26438E1B00A75068 /* SocketIO */,
+			);
 			productName = SocketApp;
 			productReference = CDF98DD826438D4000A75068 /* SocketApp.app */;
 			productType = "com.apple.product-type.application";
@@ -112,6 +152,9 @@
 				Base,
 			);
 			mainGroup = CDF98DCF26438D4000A75068;
+			packageReferences = (
+				CDF98DEA26438E1B00A75068 /* XCRemoteSwiftPackageReference "socket.io-client-swift" */,
+			);
 			productRefGroup = CDF98DD926438D4000A75068 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -138,6 +181,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CDF98DF2264391D700A75068 /* SoketIOViewModel.swift in Sources */,
 				CDF98DDE26438D4000A75068 /* ContentView.swift in Sources */,
 				CDF98DDC26438D4000A75068 /* SocketAppApp.swift in Sources */,
 			);
@@ -328,6 +372,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		CDF98DEA26438E1B00A75068 /* XCRemoteSwiftPackageReference "socket.io-client-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/socketio/socket.io-client-swift.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		CDF98DEB26438E1B00A75068 /* SocketIO */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CDF98DEA26438E1B00A75068 /* XCRemoteSwiftPackageReference "socket.io-client-swift" */;
+			productName = SocketIO;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = CDF98DD026438D4000A75068 /* Project object */;
 }
